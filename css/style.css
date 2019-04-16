@@ -244,7 +244,7 @@ nav {
   padding: 0;
 }
 
-#Services {
+#services {
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,21 +261,21 @@ nav {
   height: 725px;
 }
 
-#Services h1 {
+#services h1 {
   text-transform: uppercase;
   font-size: 34px;
   font-weight: 600;
   padding-bottom: 20px;
 }
 
-#Services > span {
+#services > span {
   display: block;
   background-color: #fcac45;
   width: 100px;
   height: 3px;
 }
 
-#Services > p {
+#services > p {
   font-style: italic;
   margin: 0 auto;
   width: 76%;
@@ -284,7 +284,7 @@ nav {
   padding-top: 60px;
 }
 
-#Services .flex {
+#services .flex {
   padding-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -293,7 +293,7 @@ nav {
   width: 76%;
 }
 
-#Services .profile {
+#services .profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,7 +310,7 @@ nav {
   padding-right: 40px;
 }
 
-#Services .profile .picture-services {
+#services .profile .picture-services {
   width: 130px;
   height: 130px;
   border-radius: 50%;
@@ -326,19 +326,19 @@ nav {
   border: 5px solid #fcac45;
 }
 
-#Services .profile span {
+#services .profile span {
   padding-top: 30px;
   text-transform: uppercase;
   font-size: 25px;
   font-weight: 600;
 }
 
-#Services .profile p {
+#services .profile p {
   padding-top: 35px;
   font-size: 14px;
 }
 
-#Services .profile:nth-child(4) {
+#services .profile:nth-child(4) {
   padding: 0;
 }
 

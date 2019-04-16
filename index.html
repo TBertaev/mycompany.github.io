@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MyCompany</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
@@ -72,7 +73,7 @@
                 </div>
             </div>
         </section>
-        <section id="Services">
+        <section id="services">
                 <h1>Our Services</h1>
                 <span></span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.</p>
@@ -167,14 +168,35 @@
     </main>
     <footer>
         <div class="social">
-            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com/bertaevwf"><i class="fab fa-facebook-f"></i></a>
             <a href=""><i class="fab fa-twitter"></i></a>
-            <a href=""><i class="fab fa-vk"></i></a>
-            <a href=""><i class="fab fa-github"></i></a>
+            <a href="https://vk.com/dgamer8989"><i class="fab fa-vk"></i></a>
+            <a href="https://github.com/TBertaev"><i class="fab fa-github"></i></a>
             <a href=""><i class="fab fa-whatsapp"></i></a>
         </div>
     </footer>
     <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="contactform.js"></script>
+    <script>
+    $(function(){
+  $('a[href^="#"]').on('click', function(event) {
+    // отменяем стандартное действие
+    event.preventDefault();
+    
+    var sc = $(this).attr("href"),
+        dn = $(sc).offset().top;
+    /*
+    * sc - в переменную заносим информацию о том, к какому блоку надо перейти
+    * dn - определяем положение блока на странице
+    */
+    
+    $('html, body').animate({scrollTop: dn}, 1000);
+    
+    /*
+    * 1000 скорость перехода в миллисекундах
+    */
+  });
+});
+ </script>
 </body>
 </html>
