@@ -1,13 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800");
-.progress {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: red;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -36,9 +27,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
 }
 
 .header-logo {
@@ -215,8 +203,8 @@ nav {
   padding-top: 100px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  -ms-grid-columns: (minmax(14rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
   margin: 0 auto;
   width: 76%;
 }
@@ -301,10 +289,10 @@ nav {
   padding-top: 100px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  -ms-grid-columns: (minmax(14rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
   margin: 0 auto;
-  width: 76%;
+  width: 79%;
   padding-bottom: 100px;
 }
 
@@ -351,10 +339,6 @@ nav {
 #services .profile p {
   padding-top: 35px;
   font-size: 14px;
-}
-
-#services .profile:nth-child(4) {
-  padding: 0;
 }
 
 #clients {
@@ -482,7 +466,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: ce;
+  text-align: center;
   grid-gap: 30px;
   width: 80%;
   -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
