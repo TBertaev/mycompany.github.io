@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800')
+.progress
+    position: fixed
+    top: 0
+    left: 0
+    width: 0
+    height: 2px
+    background-color: red
 *
     margin: 0
     padding: 0
@@ -16,6 +23,8 @@ header
     display: flex
     justify-content: space-between
     align-items: center
+    position: sticky
+    top: 0
 .header-logo 
     text-transform: uppercase
     margin-top: 56px
@@ -50,6 +59,7 @@ nav
     align-items: center
 .home-text
     color: #505050
+    text-align: center
     h1
         text-transform: uppercase
         text-align: center
@@ -65,16 +75,18 @@ nav
             color: #c3c3c3
 /*About*/
 #about
-    height: 610px
-    display: flex
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr))
     margin: 0 auto
     justify-content: center
     align-items: center
-    width: 76%
-    height: 610px
-    padding: 100px 0px
+    width: 100%
+.picture
+    text-align: center
+    padding: 100px 30px
 .about-text
     margin-left: 8%
+    padding: 100px 30px
     h2
         text-transform: uppercase
         font-weight: normal
@@ -102,12 +114,11 @@ nav
     background-color: #070707
     color: #ffffff
     display: flex
-    height: 730px
     flex-direction: column
     align-items: center
     text-align: center
     padding-top: 100px
-    height: 725px
+    padding-bottom: 150px
     h1
         text-transform: uppercase
         font-size: 34px
@@ -118,10 +129,10 @@ nav
         background-color: #fcac45
         width: 100px
         height: 3px
-    .flex
+    .team
         padding-top: 100px
-        display: flex
-        flex-direction: row
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr))
         margin: 0 auto
         width: 76%
     .profile
@@ -149,7 +160,6 @@ nav
     align-items: center
     text-align: center
     padding-top: 100px
-    height: 725px
     h1
         text-transform: uppercase
         font-size: 34px
@@ -167,11 +177,15 @@ nav
         color: #949494
         text-align: center
         padding-top: 60px
-    .flex
+    .service
         padding-top: 100px
-        display: flex
-        margin: 0 auto
-        width: 76%
+        padding-bottom: 100px
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr))
+        align-items: center
+        justify-content: center
+        text-align: center
+        width: 100%
     .profile
         display: flex
         flex-direction: column
@@ -261,15 +275,14 @@ nav
         font-style: italic
         line-height: 24px
 .grid
-    margin: 0 auto
+    margin: auto
     display: grid
     justify-content: center
     align-items: center
     grid-gap: 30px
-    grid-template-columns: 250px 250px 250px 250px
-    grid-template-rows: 260px 260px 260px
-    width: 79% 
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr))
     padding-top: 180px
+    width: 79%
     padding-bottom: 100px  
     img
         cursor: pointer
@@ -363,6 +376,7 @@ nav
     .row-4
         text-align: right
         grid-column: 2
+        grid-area: row-4
     textarea
         outline: none
         resize: none
@@ -422,8 +436,21 @@ footer
     &:hover
         color: #25D366
         border: 3px solid #25D366
-@media screen and (max-width: 1110px)
-  .grid
-    grid-template-columns: 1fr 1fr 1fr
+@media (max-width: 950px)
+    header
+        justify-content: center
+        .header-logo
+            font-size: 35px
+            margin-top: 12px
+    .menu
+        display: none
+@media (max-width: 800px)
+    .ajax-contact-form
+        display: grid
+        grid-template-areas: 'row-1' 'row-2' 'row-3' 'row-4'
+        .row-3
+            textarea
+                width: 100%
+
                 
                 

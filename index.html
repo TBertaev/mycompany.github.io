@@ -46,7 +46,7 @@
         <section id="team">
             <h1>Our Team</h1>
             <span></span>
-            <div class="flex">
+            <div class="team">
                 <div class="profile">
                     <img src="" alt="">
                     <span>Vlad Ivnov</span>
@@ -77,7 +77,7 @@
                 <h1>Our Services</h1>
                 <span></span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.</p>
-                <div class="flex">
+                <div class="service">
                     <div class="profile">
                         <div class="picture-services"><img src="img/Forma 1.png" alt=""></div>
                         <span>Web Design</span>
@@ -198,5 +198,17 @@
   });
 });
  </script>
+ <script>
+     const progress = document.querySelector('.progress');
+     window.addEventListener('scroll', progressBar);
+
+     function progressBar(e){
+     let windowsScroll = document.body.scrollTop || document.documentElement.scrollTop;
+     let windowheight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+     let per = windowsScroll / windowheight * 100;
+
+     progress.style.width = per + '%';
+    }
+     </script>
 </body>
 </html>
