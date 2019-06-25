@@ -177,38 +177,5 @@
     </footer>
     <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="contactform.js"></script>
-    <script>
-    $(function(){
-  $('a[href^="#"]').on('click', function(event) {
-    // отменяем стандартное действие
-    event.preventDefault();
-    
-    var sc = $(this).attr("href"),
-        dn = $(sc).offset().top;
-    /*
-    * sc - в переменную заносим информацию о том, к какому блоку надо перейти
-    * dn - определяем положение блока на странице
-    */
-    
-    $('html, body').animate({scrollTop: dn}, 1000);
-    
-    /*
-    * 1000 скорость перехода в миллисекундах
-    */
-  });
-});
- </script>
- <script>
-     const progress = document.querySelector('.progress');
-     window.addEventListener('scroll', progressBar);
-
-     function progressBar(e){
-     let windowsScroll = document.body.scrollTop || document.documentElement.scrollTop;
-     let windowheight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-     let per = windowsScroll / windowheight * 100;
-
-     progress.style.width = per + '%';
-    }
-     </script>
 </body>
 </html>
